@@ -1,0 +1,98 @@
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    outline: 1px solid blue;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    .page {
+        flex-grow: 1;
+        outline: 1px solid black;
+        .page_header {
+            background-color: #445162;
+            color: #ffffff;
+            .page_header_head-wrp {
+                display: flex;
+                justify-content: space-between;
+                padding: 50px;
+                box-sizing: border-box;
+                .page_header_head-wrp_text {
+                    .page_header_head-wrp_text_title {
+                        font-size: 60px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        margin: 0px 0px 51px 0px;
+                    }
+                    .page_header_head-wrp_text_list {
+                        list-style: none;
+                        margin: 0;
+                        .page_header_head-wrp_text_list_item {
+                            font-size: 20px;
+                            line-height: 36px;
+                            font-weight: 400;
+                            position: relative;
+                        }
+                        .page_header_head-wrp_text_list_item::before {
+                            display: block;
+                            width: 25px;
+                            height: 19px;
+                            background-image: url(../img/page_header_wrapper_text_list_item_marker.png);
+                            position: absolute;
+                            top: 8px;
+                            left: -36px;
+                            content: "";
+                        }
+                    }
+                }
+                .page_header_head-wrp_image {
+                    display: block;
+                    width: 469px;
+                    height: 214px;
+                    background-color: #ffffff;
+                    color: #445162;
+                }
+            }
+        }
+        .page_main {
+            .page_main_about {
+                background-color: #ffffff;
+                outline: 1px solid green;
+                display: flex;
+                justify-content: space-between;
+                padding: 50px;
+                .page_main_about_text {
+                    width: 649px;
+                    .page_main_about_text_title {
+                        color: #445161;
+                        font-size: 30px;
+                        line-height: 36px;
+                        font-weight: 400;
+                        margin-top: 0;
+                        margin-bottom: 30px;
+                    }
+                    .page_main_about_text_p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: #333333;
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .page_main_about_image {
+                    display: block;
+                    width: 430px;
+                    height: 245px;
+                    background-color: #445161;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .page_footer {
+        background-color: #445162;
+    }
+}
