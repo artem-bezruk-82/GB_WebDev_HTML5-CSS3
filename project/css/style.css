@@ -282,8 +282,105 @@ padding-right: 15px;
 
 .page_main_buy {
     background-color: #fafafa;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: #fafafa;
 }
-        
+
+.page_main_buy_title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.page_main_buy_card {
+    margin-top: 30px;
+    background-color: #445162;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 16px 2px 16px 2px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+.page_main_buy_card_title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.page_main_buy_card_price {
+    display: block;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445162;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 18px 0px 18px 0px;
+}
+
+.page_main_buy_card_list {
+    padding-left: 18px;
+    padding-right: 18px;
+    list-style-position: inside;
+}
+
+.page_main_buy_card_list_item {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.page_main_buy_card_list_item:last-child::after {
+    content: ".";
+}
+
+.page_main_buy_card_list_item::after {
+    content: ";";
+}
+
+.page_main_buy_card_button {
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 260px;
+    align-self: center;
+    padding: 11px 0px 11px 0px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.page_main_buy_card_button:hover {
+    color: #ffffff;
+    background-color: #989898;
+}
+
+.page_main_buy_card_button:active {
+    color: #ffffff;
+    background-color: #445161;
+    border: 1px solid #ffffff;
+}
+
 .page_footer {
     background-color: #445162;
 }
