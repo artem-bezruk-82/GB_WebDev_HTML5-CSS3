@@ -5,6 +5,7 @@
 .container {
     margin: 0 auto;
     max-width: 1280px;
+    outline: 1px solid blue;
 }
 
 .wrapper {
@@ -40,13 +41,16 @@
 .page_header_head-wrp_text_list {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .page_header_head-wrp_text_list_item {
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
-     position: relative;
+    padding: 0 0 0 26px;
+    box-sizing: border-box;
+    position: relative;
  }
 
 .page_header_head-wrp_text_list_item::before {
@@ -56,7 +60,7 @@
     background-image: url(../img/page_header_wrapper_text_list_item_marker.png);
     position: absolute;
     top: 8px;
-    left: -36px;
+    left: 0px;
     content: "";
 }
 
@@ -91,7 +95,11 @@
     margin-top: 0;
     margin-bottom: 20px;
 }
-                
+
+.page_main_about_text_p:last-child {
+    margin: 0;
+}
+
 .page_main_about_image {
     display: block;
     background-color: #445161;
@@ -312,6 +320,7 @@ padding-right: 15px;
     flex-basis: 300px;
     max-width: 300px;
     flex-grow: 1;
+    box-sizing: border-box;
 }
 
 .page_main_buy_card_title {
@@ -321,6 +330,7 @@ padding-right: 15px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 16px;
+    box-sizing: border-box;
 }
 
 .page_main_buy_card_price {
@@ -332,12 +342,14 @@ padding-right: 15px;
     background-color: #ffffff;
     text-align: center;
     padding: 18px 0px 18px 0px;
+    box-sizing: border-box;
 }
 
 .page_main_buy_card_list {
     padding-left: 18px;
     padding-right: 18px;
     list-style-position: inside;
+    box-sizing: border-box;
 }
 
 .page_main_buy_card_list_item {
@@ -365,14 +377,16 @@ padding-right: 15px;
     text-align: center;
     width: 260px;
     align-self: center;
-    padding: 11px 0px 11px 0px;
+    padding: 11px;
     border-radius: 5px;
     box-sizing: border-box;
+    border: 1px solid #ffffff;
 }
 
 .page_main_buy_card_button:hover {
     color: #ffffff;
     background-color: #989898;
+    border: 1px solid #989898;
 }
 
 .page_main_buy_card_button:active {
@@ -381,6 +395,37 @@ padding-right: 15px;
     border: 1px solid #ffffff;
 }
 
-.page_footer_wrp {
+.page_footer {
     background-color: #445162;
+}
+
+.page_footer_foot-wrp {
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.page_footer_foot-wrp_title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.page_footer_foot-wrp_form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.page_footer_bottom {
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f0ebebf6;
 }
