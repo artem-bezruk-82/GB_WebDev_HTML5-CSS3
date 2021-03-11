@@ -420,7 +420,102 @@ padding-right: 15px;
 .page_footer_foot-wrp_form {
     display: flex;
     flex-direction: column;
+    outline: 1px solid red;
+    box-sizing: border-box;
+}
+
+.page_footer_foot-wrp_form_name, .page_footer_foot-wrp_form_mail, .page_footer_foot-wrp_form_text {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
     width: 500px;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+}
+
+.page_footer_foot-wrp_form_name::-webkit-input-placeholder, 
+.page_footer_foot-wrp_form_mail::-webkit-input-placeholder, 
+.page_footer_foot-wrp_form_text::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+.page_footer_foot-wrp_form_name::-moz-placeholder, 
+.page_footer_foot-wrp_form_mail::-moz-placeholder, 
+.page_footer_foot-wrp_form_text::-moz-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+.page_footer_foot-wrp_form_name:-moz-placeholder,
+.page_footer_foot-wrp_form_mail:-moz-placeholder, 
+.page_footer_foot-wrp_form_text:-moz-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+.page_footer_foot-wrp_form_name:-ms-input-placeholder,
+.page_footer_foot-wrp_form_mail:-ms-input-placeholder, 
+.page_footer_foot-wrp_form_text:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+.page_footer_foot-wrp_form_name, .page_footer_foot-wrp_form_mail {
+    min-height: 40px;
+}
+
+.page_footer_foot-wrp_form_name {
+    text-transform: capitalize;
+}
+
+.page_footer_foot-wrp_form_name:focus, .page_footer_foot-wrp_form_mail:focus, .page_footer_foot-wrp_form_text:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+.page_footer_foot-wrp_form_text {
+    resize: none;
+    min-height: 170px;
+}
+
+.page_footer_foot-wrp_form_btn {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+.page_footer_foot-wrp_form_btn:hover {
+    color: #ffffff;
+    background-color: #989898;
+}
+
+.page_footer_foot-wrp_form_btn:active {
+    color: #ffffff;
+    background-color: #445161;
+    border: 1px solid #ffffff;
+    outline: none;
+}
+
+.page_footer_foot-wrp_contacts {
+    outline: 1px solid orange;
 }
 
 .page_footer_bottom {
