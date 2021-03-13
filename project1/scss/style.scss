@@ -1,0 +1,93 @@
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+    outline: 1px solid blue; /*to delete*/
+}
+
+.body {
+    margin: 0;
+    &_wrp {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        &_page {
+            flex-grow: 1;
+            &_header {
+                padding: 40px 0 40px 0;
+                box-sizing: border-box;
+                &_top {
+                    display: flex;
+                    justify-content: space-around;
+                    &_logo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        background-color: darkslategray; /*to delete*/
+                        width: 180px;                     
+                        &_icon {
+                            display: block;
+                            fill: #ffffff;
+                        }
+                        &_txt {
+                            display: block;
+                            font-size: 34px;
+                            line-height: 1.2;
+                            font-weight: 400;
+                            letter-spacing: -0.04em;
+                            color: #ffffff;  
+                        }
+                        &:hover &_txt {
+                            color: #c7b299;
+                        }
+                        &:hover &_icon {
+                            fill: #c7b299;
+                        }
+                        &:active &_txt {
+                            color: #4e3427;
+                        }
+                        &:active &_icon {
+                            fill: #4e3427;
+                        }
+                    }
+                    &_nav {
+                        background-color: darkslategray; /*to delete*/
+                        display: flex;
+                        align-items: center;
+                        &_list {
+                            list-style: none;
+                            display: flex;
+                            padding: 0;
+                            margin: 0;
+                            &_item {
+                                margin: 0 0 0 30px;
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+                                &_a {
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    line-height: 1.2;
+                                    font-weight: 300;
+                                    color: #ffffff;
+                                    &:hover {
+                                        color: #c7b299;
+                                    }
+                                    &:active {
+                                        color: #4e3427;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &_btn {
+
+                    }
+                }
+            }
+        }
+        &_footer {
+            background-color: cadetblue;
+        }
+    }
+}
