@@ -4,6 +4,12 @@
     outline: 1px solid blue; /*to delete*/
 }
 
+.container-in {
+    margin: 0 auto;
+    max-width: 1170px;
+    outline: 1px solid purple; /*to delete*/
+}
+
 .body {
     margin: 0;
     &_wrp {
@@ -13,21 +19,24 @@
         &_page {
             flex-grow: 1;
             &_header {
+                background-color: rgb(11, 172, 172); /*to delete*/
                 padding: 40px 0 40px 0;
                 box-sizing: border-box;
                 &_top {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-between;
+                    align-items: center;
                     &_logo {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         text-decoration: none;
                         background-color: darkslategray; /*to delete*/
-                        width: 180px;                     
+                        width: 180px;
+                        color: #ffffff;                      
                         &_icon {
                             display: block;
-                            fill: #ffffff;
+                            fill: currentColor;
                         }
                         &_txt {
                             display: block;
@@ -35,19 +44,12 @@
                             line-height: 1.2;
                             font-weight: 400;
                             letter-spacing: -0.04em;
-                            color: #ffffff;  
                         }
-                        &:hover &_txt {
+                        &:hover {
                             color: #c7b299;
                         }
-                        &:hover &_icon {
-                            fill: #c7b299;
-                        }
-                        &:active &_txt {
+                        &:active {
                             color: #4e3427;
-                        }
-                        &:active &_icon {
-                            fill: #4e3427;
                         }
                     }
                     &_nav {
@@ -80,8 +82,52 @@
                             }
                         }
                     }
-                    &_btn {
-
+                    &_cart {
+                        border: none;
+                        padding: 0;
+                        outline: none;
+                        background-color: darkslategray; /*to delete*/
+                        &_icon {
+                            display: block;
+                            fill: #ffffff;
+                            &:hover {
+                                fill: #c7b299;
+                            }
+                            &:active {
+                                fill: #4e3427;
+                            }
+                        }
+                    }
+                    &_search {
+                        background-color: darkslategray; /*to delete*/
+                        position: relative;
+                        &_lable {
+                            display: block;
+                            &_icon {
+                                fill: #ffffff;
+                            }
+                            &:hover &_icon {
+                                fill: #c7b299;
+                            }
+                        }
+                        &_input {
+                            position: absolute;
+                            top: 44px;
+                            left: -155px;
+                            width: 0;
+                            min-height: 0;
+                            padding: 5px;
+                            outline: none;
+                            box-sizing: border-box;
+                            background-color: transparent;
+                            border: none;
+                            &:focus {
+                                width: 150px;
+                                min-height: 20px;
+                                border: 2px solid #fff;
+                                transition: width 1s ease;
+                            }
+                        }
                     }
                 }
             }
