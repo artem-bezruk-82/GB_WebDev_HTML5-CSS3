@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff"), url("../fonts/montserrat-light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1920px;
@@ -133,6 +140,8 @@
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
+  font-style: normal;
+  font-family: montserrat, Arial, sans-serif;
   color: #ffffff;
 }
 
@@ -203,6 +212,20 @@
   border: 2px solid #fff;
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
+}
+
+.body_wrp_page_header_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.body_wrp_page_header_slider_pag {
+  width: 100%;
 }
 
 .body_wrp_footer {
