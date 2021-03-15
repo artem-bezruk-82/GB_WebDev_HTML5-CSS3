@@ -1,7 +1,18 @@
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
 .container {
     margin: 0 auto;
     max-width: 1920px;
-    outline: 1px solid blue; /*to delete*/
+    outline: 1px solid red; /*to delete*/
 }
 
 .container-in {
@@ -33,7 +44,7 @@
                         text-decoration: none;
                         background-color: darkslategray; /*to delete*/
                         width: 180px;
-                        color: #ffffff;                      
+                        color: #ffffff;                   
                         &_icon {
                             display: block;
                             fill: currentColor;
@@ -43,7 +54,9 @@
                             font-size: 34px;
                             line-height: 1.2;
                             font-weight: 400;
+                            font-style: normal;
                             letter-spacing: -0.04em;
+                            font-family: 'raleway', 'Arial', sans-serif;
                         }
                         &:hover {
                             color: #c7b299;

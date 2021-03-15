@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway-regular-webfont.woff2") format("woff2"), url("../fonts/raleway-regular-webfont.woff") format("woff"), url("../fonts/raleway-regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1920px;
-  outline: 1px solid blue;
+  outline: 1px solid red;
   /*to delete*/
 }
 
@@ -80,7 +87,9 @@
   font-size: 34px;
   line-height: 1.2;
   font-weight: 400;
+  font-style: normal;
   letter-spacing: -0.04em;
+  font-family: 'raleway', 'Arial', sans-serif;
 }
 
 .body_wrp_page_header_top_logo:hover {
