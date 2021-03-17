@@ -8,6 +8,24 @@
 }
 
 @font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-medium.woff2') format('woff2'),
+         url('../fonts/raleway-medium.woff') format('woff'),
+         url('../fonts/raleway-medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway-extrabold.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold.woff') format('woff'),
+         url('../fonts/raleway-extrabold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'montserrat';
     src: url('../fonts/montserrat-light.woff2') format('woff2'),
          url('../fonts/montserrat-light.woff') format('woff'),
@@ -147,6 +165,7 @@
                                 min-height: 20px;
                                 border: 2px solid #fff;
                                 transition: width 1s ease;
+                                color: #ffffff;
                             }
                         }
                     }
@@ -240,12 +259,32 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        outline: 1px solid purple;
                         &_design {
+                            font-family: raleway, Arial, sans-serif;
+                            font-size: 36px;
+                            line-height: 1.2;
+                            font-weight: 500;
+                            font-style: normal;
+                            color: #ffffff; 
                         }
                         &_template {
+                            font-family: raleway, Arial, sans-serif;
+                            font-size: 52px;
+                            line-height: 1.2;
+                            font-weight: 800;
+                            font-style: normal;
+                            color: #ffffff;
+                            margin: 14px 0 0 0;
                         }
                         &_txt {
+                            font-family: montserrat, Arial, sans-serif;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 300;
+                            font-style: normal;
+                            color: #ffffff;
+                            text-align: center;
+                            margin: 19px 0 0 0;
                         }
                         &_btn {
                             width: 170px;
@@ -257,19 +296,20 @@
                             box-sizing: border-box;
                             background-color: #998675;
                             border-radius: 3px;
-                            color: #ffffff;
                             outline: none;
+                            color: #ffffff;
+                            margin: 52px 0 0 0;
                             &_txt {
                                 text-transform: uppercase;
-                                font-family: raleway;
+                                font-family: raleway, Arial, sans-serif;
                                 font-size: 14px;
                                 line-height: 23px;
                                 font-weight: 800;
                                 font-style: normal;
                             }
                             &:hover {
-                                background-color: #ffffff;
                                 color: #998675;
+                                background-color: #ffffff;
                             }
                             &:active {
                                 border: 1px solid #ffffff;
