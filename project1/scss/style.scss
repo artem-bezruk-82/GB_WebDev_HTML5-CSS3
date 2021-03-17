@@ -20,13 +20,11 @@
 .container {
     margin: 0 auto;
     max-width: 1920px;
-    outline: 1px solid red; /*to delete*/
 }
 
 .container-in {
     margin: 0 auto;
     max-width: 1170px;
-    outline: 1px solid purple; /*to delete*/
 }
 
 .body {
@@ -38,9 +36,12 @@
         &_page {
             flex-grow: 1;
             &_header {
-                background-color: rgb(11, 172, 172); /*to delete*/
+                background-image: url(../img/header_background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
                 padding: 40px 0 40px 0;
                 box-sizing: border-box;
+                background-position: center;
                 &_top {
                     display: flex;
                     justify-content: space-between;
@@ -50,7 +51,6 @@
                         align-items: center;
                         justify-content: center;
                         text-decoration: none;
-                        background-color: darkslategray; /*to delete*/
                         width: 180px;
                         color: #ffffff;                   
                         &_icon {
@@ -74,7 +74,6 @@
                         }
                     }
                     &_nav {
-                        background-color: darkslategray; /*to delete*/
                         display: flex;
                         align-items: center;
                         &_list {
@@ -109,7 +108,7 @@
                         border: none;
                         padding: 0;
                         outline: none;
-                        background-color: darkslategray; /*to delete*/
+                        background: none;
                         &_icon {
                             display: block;
                             fill: #ffffff;
@@ -122,7 +121,6 @@
                         }
                     }
                     &_search {
-                        background-color: darkslategray; /*to delete*/
                         position: relative;
                         &_lable {
                             display: block;
@@ -154,10 +152,11 @@
                     }
                 }
                 &_slider {
-                    margin: 285px 0 0 0;
+                    margin: 285px 0 327px 0;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
+                    align-items: center;
                     &_arow {
                         width: 40px;
                         height: 73px;
@@ -241,6 +240,7 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        outline: 1px solid purple;
                         &_design {
                         }
                         &_template {
@@ -248,11 +248,61 @@
                         &_txt {
                         }
                         &_btn {
+                            width: 170px;
+                            min-height: 55px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid transparent;
+                            box-sizing: border-box;
+                            background-color: #998675;
+                            border-radius: 3px;
+                            color: #ffffff;
+                            outline: none;
+                            &_txt {
+                                text-transform: uppercase;
+                                font-family: raleway;
+                                font-size: 14px;
+                                line-height: 23px;
+                                font-weight: 800;
+                                font-style: normal;
+                            }
+                            &:hover {
+                                background-color: #ffffff;
+                                color: #998675;
+                            }
+                            &:active {
+                                border: 1px solid #ffffff;
+                                background-color: transparent;
+                                color: #ffffff;
+                            }
                         }
                     }
-                    &_pag {
-                        width: 100%;
-                        &_a {
+                }
+                &_pag {
+                    display: flex;
+                    justify-content: center;
+                    &_a {
+                        display: block;
+                        width: 11px;
+                        height: 11px;
+                        border: 2px solid transparent;
+                        border-radius: 50%;
+                        opacity: 0.5;
+                        background-color: #ffffff;
+                        margin: 0 9px 0 0;
+                        box-sizing: border-box;
+                        &:last-child {
+                            margin: 0 0 0 0;
+                        }
+                        &:hover {
+                            background-color: #c7b299;
+                            transform: scale(1.36);
+                        }
+                        &:active {
+                            background-color: rgba(255,255,255,0.0);
+                            border: 2px solid #d3c1ad;
+                            transform: scale(1.36);
                         }
                     }
                 }
