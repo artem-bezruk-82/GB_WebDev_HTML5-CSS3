@@ -190,8 +190,7 @@ color: #445161;
 }
 
 .page_main_screenshots_item {
-flex-grow: 1;
-flex-basis: 500px;
+width: 49%;
 margin: 30px 0 0 0;
 display: flex;
 }
@@ -201,10 +200,6 @@ display: block;
 background-color: #445161;
 color: white;
 margin-right: 15px;
-}
-
-.page_main_screenshots_item_wrp {
-padding-right: 15px;
 }
 
 .page_main_screenshots_item_wrp_title {
@@ -303,23 +298,22 @@ padding-right: 15px;
     font-weight: 400;
     color: #445161;
     width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
     text-align: center;
+    margin: 0 0 30px 0;
 }
 
 .page_main_buy_card {
-    margin-top: 30px;
     background-color: #445162;
     color: #ffffff;
     border-radius: 5px;
-    padding: 16px 2px 16px 2px;
+    padding: 0 0 16px 0;
     display: flex;
     flex-direction: column;
     flex-basis: 300px;
     max-width: 300px;
     flex-grow: 1;
     box-sizing: border-box;
+    border: 2px solid #445162;
 }
 
 .page_main_buy_card_title {
@@ -327,8 +321,8 @@ padding-right: 15px;
     line-height: 30px;
     font-weight: 400;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 16px;
+    margin: 0;
+    padding: 16px;
     box-sizing: border-box;
 }
 
@@ -340,13 +334,13 @@ padding-right: 15px;
     color: #445162;
     background-color: #ffffff;
     text-align: center;
-    padding: 18px 0px 18px 0px;
+    padding: 18px;
     box-sizing: border-box;
 }
 
 .page_main_buy_card_list {
-    padding-left: 18px;
-    padding-right: 18px;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 20px;
     list-style-position: inside;
     box-sizing: border-box;
 }
@@ -380,6 +374,7 @@ padding-right: 15px;
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid #ffffff;
+    margin: 20px auto 0 auto;
 }
 
 .page_main_buy_card_button:hover {
@@ -402,8 +397,8 @@ padding-right: 15px;
     color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px 50px 30px 50px;
+    justify-content: center;
+    padding: 50px;
     box-sizing: border-box;
 }
 
@@ -420,6 +415,7 @@ padding-right: 15px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    margin: 0 50px 0 0;
 }
 
 .page_footer_foot-wrp_form_name, .page_footer_foot-wrp_form_mail, .page_footer_foot-wrp_form_text {
@@ -493,8 +489,8 @@ padding-right: 15px;
     color: #445162;
     background-color: #ffffff;
     width: 140px;
-    height: 40px;
-    margin: 0 auto 20px auto;
+    min-height: 40px;
+    margin: 0 auto;
     border-radius: 5px;
     box-sizing: border-box;
     border-style: none;
@@ -515,13 +511,13 @@ padding-right: 15px;
 .page_footer_foot-wrp_contacts {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .page_footer_foot-wrp_contacts_list {
     list-style: none;
-    padding: 0 0 0 0;
-    margin: 0 0 10px 0;
+    padding: 0;
+    margin: 0 0 30px 0;
     display: flex;
     flex-direction: column;
 }
@@ -529,7 +525,12 @@ padding-right: 15px;
 .page_footer_foot-wrp_contacts_list_item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+.page_footer_foot-wrp_contacts_list_item:last-child {
+    margin: 0;
 }
 
 .page_footer_foot-wrp_contacts_list_item_skype,
@@ -537,7 +538,7 @@ padding-right: 15px;
 .page_footer_foot-wrp_contacts_list_item_phone,
 .page_footer_foot-wrp_contacts_list_item_icq {
     display: block;
-    padding: 0 0 0 3px;
+    padding: 0 0 0 32px;
     box-sizing: border-box;
 }
 
@@ -549,6 +550,9 @@ padding-right: 15px;
     height: 26px;
     display: block;
     font-size: 25px;
+    position: absolute;
+    top: -5px;
+    left: 0;
 }
 
 .page_footer_foot-wrp_contacts_icons {
