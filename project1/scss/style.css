@@ -456,6 +456,20 @@
           transform: scale(1.36);
 }
 
+.body_wrp_page_main_services {
+  outline: 1px solid green;
+  /*TO DELETE*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 266px;
+}
+
+.body_wrp_page_main_services_item {
+  outline: 1px solid purple;
+  /*TO DELETE*/
+}
+
 .body_wrp_footer {
   background-color: cadetblue;
 }

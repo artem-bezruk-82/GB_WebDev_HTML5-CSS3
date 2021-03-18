@@ -347,6 +347,16 @@
                     }
                 }
             }
+            &_main {
+                &_services {
+                    outline: 1px solid green; /*TO DELETE*/
+                    display: flex;
+                    width: 266px;
+                    &_item {
+                        outline: 1px solid purple; /*TO DELETE*/
+                    }
+                }
+            }
         }
         &_footer {
             background-color: cadetblue;
