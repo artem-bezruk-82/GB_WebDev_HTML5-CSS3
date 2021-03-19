@@ -34,13 +34,10 @@
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1920px;
-}
-
-.container-in {
-  margin: 0 auto;
   max-width: 1170px;
+  margin: 0 auto;
+  border: 1px solid blue;
+  /*TO DELETE*/
 }
 
 .body {
@@ -48,6 +45,8 @@
 }
 
 .body_wrp {
+  max-width: 1920px;
+  margin: 0 auto;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,21 +463,22 @@
 }
 
 .body_wrp_page_main_services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 70px 0 70px 0;
 }
 
-.body_wrp_page_main_services_item {
+.body_wrp_page_main_services_wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.body_wrp_page_main_services_wrp_item {
   width: 266px;
-  outline: 1px solid purple;
-  /*TO DELETE*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,13 +497,11 @@
           box-sizing: border-box;
 }
 
-.body_wrp_page_main_services_item_svg {
-  outline: 1px solid black;
-  /*TO DELETE*/
+.body_wrp_page_main_services_wrp_item_icon {
   fill: #555555;
 }
 
-.body_wrp_page_main_services_item_title {
+.body_wrp_page_main_services_wrp_item_title {
   font-family: raleway, Arial, sans-serif;
   font-size: 22px;
   line-height: 1.2;
@@ -513,7 +511,7 @@
   margin: 29px 0 0 0;
 }
 
-.body_wrp_page_main_services_item_txt {
+.body_wrp_page_main_services_wrp_item_txt {
   font-family: montserrat, Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -524,7 +522,7 @@
   margin: 19px 0 0 0;
 }
 
-.body_wrp_page_main_services_item::after {
+.body_wrp_page_main_services_wrp_item::after {
   content: "";
   display: block;
   width: 70px;
@@ -533,15 +531,15 @@
   margin: 30px 0 0 0;
 }
 
-.body_wrp_page_main_services_item:hover .body_wrp_page_main_services_item_svg {
+.body_wrp_page_main_services_wrp_item:hover .body_wrp_page_main_services_wrp_item_icon {
   fill: #c7b299;
 }
 
-.body_wrp_page_main_services_item:hover .body_wrp_page_main_services_item_title {
+.body_wrp_page_main_services_wrp_item:hover .body_wrp_page_main_services_wrp_item_title {
   color: #c7b299;
 }
 
-.body_wrp_page_main_services_item:hover::after {
+.body_wrp_page_main_services_wrp_item:hover::after {
   background-color: #c7b299;
 }
 
