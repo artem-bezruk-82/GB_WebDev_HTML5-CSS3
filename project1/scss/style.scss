@@ -18,6 +18,15 @@
 
 @font-face {
     font-family: 'raleway';
+    src: url('../fonts/raleway-semibold.woff2') format('woff2'),
+         url('../fonts/raleway-semibold.woff') format('woff'),
+         url('../fonts/raleway-semibold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
     src: url('../fonts/raleway-extrabold.woff2') format('woff2'),
          url('../fonts/raleway-extrabold.woff') format('woff'),
          url('../fonts/raleway-extrabold.ttf') format('ttf');
@@ -349,11 +358,59 @@
             }
             &_main {
                 &_services {
-                    outline: 1px solid green; /*TO DELETE*/
                     display: flex;
-                    width: 266px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    padding: 70px 0 70px 0;
                     &_item {
+                        width: 266px;
                         outline: 1px solid purple; /*TO DELETE*/
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin: 10px 0 10px 0;
+                        box-sizing: border-box;
+                        &_svg {
+                            outline: 1px solid black; /*TO DELETE*/
+                            fill: #555555;
+                        }
+                        &_title {
+                            font-family: raleway, Arial, sans-serif;
+                            font-size: 22px;
+                            line-height: 1.2;
+                            font-weight: 600;
+                            font-style: normal;
+                            color: #555555;
+                            margin: 29px 0 0 0;
+                        }
+                        &_txt {
+                            font-family: montserrat, Arial, sans-serif;
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 300;
+                            font-style: normal;
+                            color: #8c8c8c;
+                            text-align: center;
+                            margin: 19px 0 0 0;
+                        }
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 70px;
+                            height: 3px;
+                            background-color: #8c8c8c;
+                            margin: 30px 0 0 0;
+                        }
+                        &:hover &_svg {
+                            fill: #c7b299;
+                        }
+                        &:hover &_title {
+                            color: #c7b299;
+                        }
+                        &:hover::after {
+                            background-color: #c7b299;
+                        }
                     }
                 }
             }
