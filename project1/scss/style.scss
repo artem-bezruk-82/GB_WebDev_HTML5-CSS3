@@ -47,7 +47,6 @@
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    border: 1px solid blue; /*TO DELETE*/
 }
 
 .body {
@@ -449,6 +448,70 @@
                         background-repeat: no-repeat;
                         background-position: center, left, right;
                         position: relative;
+                    }
+                }
+                &_adv {
+                    padding: 48px 0 48px 0;
+                    background-color: #f4f5f8;
+                    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+                    &_wrp {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        &_txt {
+                            margin: 0;
+                            &_title {
+                                font-family: raleway, Arial, sans-serif;
+                                font-size: 28px;
+                                line-height: 1.2;
+                                font-weight: 400;
+                                font-style: normal;
+                                color: #ffffff;
+                                margin: 0 0 8px 0;
+                                &_brand {
+                                    color: #c7b299;
+                                }
+                            }
+                            &_p {
+                                font-family: montserrat, Arial, sans-serif;
+                                font-size: 18px;
+                                line-height: 1.2;
+                                font-weight: 300;
+                                font-style: normal;
+                                color: #615855;
+                                margin: 0;
+                            }
+                        }
+                        &_btn {
+                            width: 170px;
+                            min-height: 55px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid transparent;
+                            box-sizing: border-box;
+                            background-color: #998675;
+                            border-radius: 3px;
+                            outline: none;
+                            color: #ffffff;
+                            &_txt {
+                                font-family: Raleway, Arial, sans-serif;
+                                font-size: 14px;
+                                line-height: 23px;
+                                font-weight: 800;
+                                font-style: normal;
+                                text-transform: uppercase;
+                            }
+                            &:hover {
+                                color: #998675;
+                                background-color: #ffffff;
+                            }
+                            &:active {
+                                border: 1px solid #ffffff;
+                                background-color: transparent;
+                                color: #ffffff;
+                            }
+                        }
                     }
                 }
             }
