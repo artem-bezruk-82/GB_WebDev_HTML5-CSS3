@@ -47,6 +47,7 @@
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    outline: 1px solid blue;
 }
 
 .body {
@@ -412,6 +413,7 @@
 
                 }
                 &_ideas {
+                    outline: 2px solid purple;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -439,7 +441,8 @@
                         margin: 0 0 40px 0;
                     }
                     &_screen {
-                        width: 1230px;
+                        max-width: 1230px;
+                        width: 100%;
                         min-height: 482px;
                         margin: 0 auto;
                         background-image: url(../img/ideas_screen_1.jpg),
@@ -449,7 +452,8 @@
                         background-position: center, left, right;
                         position: relative;
                     }
-                }
+                    
+                }        
                 &_adv {
                     padding: 48px 0 48px 0;
                     background-color: #f4f5f8;
