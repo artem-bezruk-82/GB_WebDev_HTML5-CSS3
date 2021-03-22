@@ -35,8 +35,8 @@
 
 .container {
   max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
-  outline: 1px solid blue;
 }
 
 .body {
@@ -588,7 +588,7 @@
   margin: 0 auto;
   background-image: url(../img/ideas_screen_1.jpg), url(../img/ideas_screen_2.jpg), url(../img/ideas_screen_3.jpg);
   background-repeat: no-repeat;
-  background-position: center, left, right;
+  background-position: center, left bottom, right bottom;
   position: relative;
 }
 
@@ -677,6 +677,165 @@
   border: 1px solid #ffffff;
   background-color: transparent;
   color: #ffffff;
+}
+
+.body_wrp_page_main_projects {
+  width: 100%;
+  outline: 2px solid red;
+  /*TO DELETE*/
+  padding: 80px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body_wrp_page_main_projects_title {
+  text-align: center;
+  margin: 0 0 24px 0;
+  font-family: raleway, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  font-style: normal;
+  color: #555555;
+}
+
+.body_wrp_page_main_projects_txt {
+  max-width: 757px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  font-style: normal;
+  color: #8c8c8c;
+}
+
+.body_wrp_page_main_projects_filter {
+  margin: 0 auto;
+}
+
+.body_wrp_page_main_projects_filter_btn {
+  padding: 10px 20px;
+  background-color: rgba(17, 17, 17, 0);
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  margin: 40px 0 0 0;
+  outline: none;
+  color: #8c8c8c;
+}
+
+.body_wrp_page_main_projects_filter_btn_txt {
+  font-family: montserrat, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.body_wrp_page_main_projects_filter_btn:hover {
+  background-color: #998675;
+  color: #ffffff;
+}
+
+.body_wrp_page_main_projects_filter_btn:active {
+  background-color: transparent;
+  border: 1px solid #998675;
+  color: #998675;
+}
+
+.body_wrp_page_main_projects_portfolio {
+  outline: 2px solid green;
+  /*TO DELETE*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.body_wrp_page_main_projects_portfolio_cover {
+  outline: 1px solid blue;
+  margin: 40px 0 0 0;
+  background-color: #fbfaf8;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_img {
+  display: block;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  outline: 1px solid orange;
+  /*TO DELETE*/
+  background-color: #fbfaf8;
+  padding: 30px 30px 27px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_txt_title {
+  margin-bottom: 14px;
+  font-family: raleway, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  font-style: normal;
+  color: #c7b299;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_txt_scope {
+  font-family: montserrat, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #d1d1d1;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_txt::before {
+  content: "";
+  display: block;
+  outline: 1px solid violet;
+  /*TO DELETE*/
+  border: 15px solid transparent;
+  border-bottom: 10px solid #fbfaf8;
+  position: absolute;
+  top: -26px;
+  left: 20px;
+}
+
+.body_wrp_page_main_projects_portfolio_cover:hover .body_wrp_page_main_projects_portfolio_cover_txt {
+  background-color: #362f2d;
+}
+
+.body_wrp_page_main_projects_portfolio_cover:hover .body_wrp_page_main_projects_portfolio_cover_txt::before {
+  border-bottom: 10px solid #362f2d;
+}
+
+.body_wrp_page_main_projects_portfolio_cover:hover .body_wrp_page_main_projects_portfolio_cover_txt_title {
+  color: #ffffff;
+}
+
+.body_wrp_page_main_projects_portfolio_cover:hover .body_wrp_page_main_projects_portfolio_cover_txt_scope {
+  color: #c7b299;
 }
 
 .body_wrp_footer {
