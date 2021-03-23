@@ -178,11 +178,11 @@
   fill: #ffffff;
 }
 
-.body_wrp_page_header_top_cart_icon:hover {
+.body_wrp_page_header_top_cart:hover .body_wrp_page_header_top_cart_icon {
   fill: #c7b299;
 }
 
-.body_wrp_page_header_top_cart_icon:active {
+.body_wrp_page_header_top_cart:active .body_wrp_page_header_top_cart_icon {
   fill: #4e3427;
 }
 
@@ -543,7 +543,6 @@
 }
 
 .body_wrp_page_main_ideas {
-  outline: 2px solid purple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,8 +680,6 @@
 
 .body_wrp_page_main_projects {
   width: 100%;
-  outline: 2px solid red;
-  /*TO DELETE*/
   padding: 80px 0 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,7 +705,7 @@
   max-width: 757px;
   text-align: center;
   margin: 0 auto;
-  font-family: Montserrat;
+  font-family: montserrat, Arial, sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -751,8 +748,6 @@
 }
 
 .body_wrp_page_main_projects_portfolio {
-  outline: 2px solid green;
-  /*TO DELETE*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,9 +760,52 @@
 }
 
 .body_wrp_page_main_projects_portfolio_cover {
-  outline: 1px solid blue;
   margin: 40px 0 0 0;
   background-color: #fbfaf8;
+  position: relative;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_link {
+  display: block;
+  position: absolute;
+  top: 106px;
+  left: 144px;
+  z-index: -1;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_link_icon {
+  fill: #ffffff;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_link:hover .body_wrp_page_main_projects_portfolio_cover_link_icon {
+  fill: #c7b299;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_link:active .body_wrp_page_main_projects_portfolio_cover_link_icon {
+  fill: #4e3427;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_search {
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  position: absolute;
+  z-index: -1;
+  top: 106px;
+  left: 198px;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_search_icon {
+  fill: #ffffff;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_search:hover .body_wrp_page_main_projects_portfolio_cover_search_icon {
+  fill: #c7b299;
+}
+
+.body_wrp_page_main_projects_portfolio_cover_search:active .body_wrp_page_main_projects_portfolio_cover_search_icon {
+  fill: #4e3427;
 }
 
 .body_wrp_page_main_projects_portfolio_cover_img {
@@ -782,8 +820,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  outline: 1px solid orange;
-  /*TO DELETE*/
   background-color: #fbfaf8;
   padding: 30px 30px 27px 30px;
   -webkit-box-sizing: border-box;
@@ -813,12 +849,10 @@
 .body_wrp_page_main_projects_portfolio_cover_txt::before {
   content: "";
   display: block;
-  outline: 1px solid violet;
-  /*TO DELETE*/
   border: 15px solid transparent;
   border-bottom: 10px solid #fbfaf8;
   position: absolute;
-  top: -26px;
+  top: -25px;
   left: 20px;
 }
 
@@ -836,6 +870,58 @@
 
 .body_wrp_page_main_projects_portfolio_cover:hover .body_wrp_page_main_projects_portfolio_cover_txt_scope {
   color: #c7b299;
+}
+
+.body_wrp_page_main_projects_portfolio_cover:hover .body_wrp_page_main_projects_portfolio_cover_img {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.body_wrp_page_main_projects_portfolio_cover:hover .body_wrp_page_main_projects_portfolio_cover_link,
+.body_wrp_page_main_projects_portfolio_cover:hover .body_wrp_page_main_projects_portfolio_cover_search {
+  z-index: 1;
+}
+
+.body_wrp_page_main_projects_btn {
+  width: 170px;
+  min-height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #998675;
+  border-radius: 3px;
+  outline: none;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.body_wrp_page_main_projects_btn_txt {
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.body_wrp_page_main_projects_btn:hover {
+  color: #998675;
+  background-color: #362f2d;
+}
+
+.body_wrp_page_main_projects_btn:active {
+  border: 1px solid #362f2d;
+  background-color: transparent;
+  color: #998675;
 }
 
 .body_wrp_footer {

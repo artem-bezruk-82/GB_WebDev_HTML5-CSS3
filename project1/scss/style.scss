@@ -137,12 +137,12 @@
                         &_icon {
                             display: block;
                             fill: #ffffff;
-                            &:hover {
-                                fill: #c7b299;
-                            }
-                            &:active {
-                                fill: #4e3427;
-                            }
+                        }
+                        &:hover &_icon {
+                            fill: #c7b299;
+                        }
+                        &:active &_icon {
+                            fill: #4e3427;
                         }
                     }
                     &_search {
@@ -413,7 +413,6 @@
 
                 }
                 &_ideas {
-                    outline: 2px solid purple;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -520,7 +519,6 @@
                 }
                 &_projects {
                     width: 100%;
-                    outline: 2px solid red; /*TO DELETE*/
                     padding: 80px 0 80px 0;
                     display: flex;
                     flex-direction: column;
@@ -538,7 +536,7 @@
                         max-width: 757px;
                         text-align: center;
                         margin: 0 auto;
-                        font-family: Montserrat;
+                        font-family: montserrat, Arial, sans-serif;
                         font-size: 16px;
                         line-height: 28px;
                         font-weight: 300;
@@ -575,22 +573,55 @@
                         }
                     }
                     &_portfolio {
-                        outline: 2px solid green; /*TO DELETE*/
                         display: flex;
                         justify-content: space-between;
                         flex-wrap: wrap;
                         margin-bottom: 40px;
                         &_cover {
-                            outline: 1px solid blue;
                             margin: 40px 0 0 0;
                             background-color: #fbfaf8;
+                            position: relative;
+                            &_link {
+                                display: block;
+                                position: absolute;
+                                top: 106px;
+                                left: 144px;
+                                z-index: -1;
+                                &_icon {
+                                    fill: #ffffff;
+                                }
+                                &:hover &_icon {
+                                    fill: #c7b299;
+                                }
+                                &:active &_icon  {
+                                    fill: #4e3427;
+                                }
+                            }
+                            &_search {
+                                display: block;
+                                border: none;
+                                background: none;
+                                padding: 0;
+                                position: absolute;
+                                z-index: -1;
+                                top: 106px;
+                                left: 198px;
+                                &_icon {
+                                    fill: #ffffff;
+                                }
+                                &:hover &_icon {
+                                    fill: #c7b299;
+                                }
+                                &:active &_icon  {
+                                    fill: #4e3427;
+                                }
+                            }
                             &_img {
                                 display: block;
                             }
                             &_txt {
                                 display: flex;
                                 flex-direction: column;
-                                outline: 1px solid orange; /*TO DELETE*/
                                 background-color: #fbfaf8;
                                 padding: 30px 30px 27px 30px;
                                 box-sizing: border-box;
@@ -615,11 +646,10 @@
                                 &::before {
                                     content: "";
                                     display: block;
-                                    outline: 1px solid violet; /*TO DELETE*/
                                     border: 15px solid transparent;
                                     border-bottom: 10px solid #fbfaf8;
                                     position: absolute;
-                                    top: -26px;
+                                    top: -25px;
                                     left: 20px;
     
                                 }
@@ -637,7 +667,45 @@
                                 .body_wrp_page_main_projects_portfolio_cover_txt_scope {
                                     color: #c7b299;
                                 }
+                                .body_wrp_page_main_projects_portfolio_cover_img {
+                                    filter: brightness(40%);
+                                }
+                                .body_wrp_page_main_projects_portfolio_cover_link,
+                                .body_wrp_page_main_projects_portfolio_cover_search {
+                                    z-index: 1;
+                                }
                             }
+                        }
+                    }
+                    &_btn {
+                        width: 170px;
+                        min-height: 55px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid transparent;
+                        box-sizing: border-box;
+                        background-color: #998675;
+                        border-radius: 3px;
+                        outline: none;
+                        color: #ffffff;
+                        margin: 0 auto;
+                        &_txt {
+                            font-family: Raleway, Arial, sans-serif;
+                            font-size: 14px;
+                            line-height: 23px;
+                            font-weight: 800;
+                            font-style: normal;
+                            text-transform: uppercase;
+                        }
+                        &:hover {
+                            color: #998675;
+                            background-color: #362f2d;
+                        }
+                        &:active {
+                            border: 1px solid #362f2d;
+                            background-color: transparent;
+                            color: #998675;
                         }
                     }
                 }
