@@ -41,7 +41,15 @@
          url('../fonts/montserrat-light.ttf') format('ttf');
     font-weight: 300;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-regular.woff') format('woff'),
+         url('../fonts/montserrat-regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -706,6 +714,79 @@
                             border: 1px solid #362f2d;
                             background-color: transparent;
                             color: #998675;
+                        }
+                    }
+                }
+                &_video {
+                    position: relative;
+                    height: 705px;
+                    &_mp4 {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(17,17,17,0.5);
+                    }
+                    &_wrp {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        color: #ffffff;
+                        box-sizing: border-box;
+                        position: absolute;
+                        top: 25%;
+                        left: 37%;
+                        right: 37%;
+                        &_btn {
+                            border-radius: 50%;
+                            border: none;
+                            background-color: rgba(0,0,0,0.2);
+                            width: 100px;
+                            height: 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 15px;
+                            margin: 0;
+                            box-sizing: border-box;
+                            outline: none;
+                            &_icon {
+                                margin: 0;
+                                fill: #ffffff;
+                                opacity: 1;
+                            }
+                            &:hover &_icon {
+                                fill: #c7b299;
+                            }
+                            &:active &_icon {
+                                fill: #4e3427;
+                                }
+                        }
+                        &_title {
+                            text-transform: capitalize;
+                            font-family: raleway, Arial, sans-serif;
+                            font-size: 30px;
+                            line-height: 1.2;
+                            font-weight: 500;
+                            font-style: normal;
+                            margin: 44px 0 29px 0;
+                        }
+                        &_txt {
+                            max-width: 552px;
+                            text-align: center;
+                            font-family: montserrat, Arial, sans-serif;
+                            font-size: 16px;
+                            line-height: 28px;
+                            font-weight: 300;
+                            font-style: normal;
+                            margin: 0;
+                        }
+                        &_time {
+                            font-family: montserrat, Arial, sans-serif;
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: #c7b299;
+                            margin: 40px 0 0 0;
                         }
                     }
                 }
