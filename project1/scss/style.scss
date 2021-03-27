@@ -27,6 +27,15 @@
 
 @font-face {
     font-family: 'raleway';
+    src: url('') format('woff2'),
+         url('') format('woff'),
+         url('') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
     src: url('../fonts/raleway-extrabold.woff2') format('woff2'),
          url('../fonts/raleway-extrabold.woff') format('woff'),
          url('../fonts/raleway-extrabold.ttf') format('ttf');
@@ -79,13 +88,16 @@
 .body {
     margin: 0;
     &_wrp {
-        max-width: 1920px;
-        margin: 0 auto;
+        // max-width: 1920px;
+        // margin: 0 auto;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         &_page {
             flex-grow: 1;
+            max-width: 1920px;
+            width: 100%;
+            margin: 0 auto;
             &_header {
                 background-image: url(../img/header_background.jpg);
                 background-repeat: no-repeat;
@@ -1180,12 +1192,270 @@
                         justify-content: space-around;
                         align-items: center;
                         flex-wrap: wrap;
+                        &_img:hover {
+                            filter: brightness(60%);
+                        }
                     }
                 }
             }
         }
         &_footer {
-            background-color: cadetblue;
+            &_content {
+                background-color: #191919;
+                padding: 80px 0 80px 0;
+                &_wrp {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    &_brand {
+                        max-width: 258px;
+                        &_logo {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-decoration: none;
+                            width: 180px;
+                            color: #ffffff;  
+                            &_icon {
+                                display: block;
+                                fill: currentColor;
+                            }
+                            &_txt {
+                                display: block;
+                                font-size: 34px;
+                                line-height: 1.2;
+                                font-weight: 400;
+                                font-style: normal;
+                                letter-spacing: -0.04em;
+                                font-family: 'raleway', 'Arial', sans-serif;
+                            }
+                            &:hover {
+                                color: #c7b299;
+                            }
+                            &:active {
+                                color: #4e3427;
+                            }
+                        }
+                        &_txt {
+                            font-family: montserrat, Arial, sans-serif;
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 300;
+                            font-style: normal;
+                            color: #555555;
+                            margin: 29px 0 33px 0;
+                        }
+                        &_link {
+                            font-family: montserrat, Arial, sans-serif;
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: #d1d1d1;
+                            text-transform: capitalize;
+                            text-decoration: none;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                display: block;
+                                border: 4px solid transparent;
+                                border-left: 5px solid #c7b299;
+                                position: absolute;
+                                top: 3px;
+                                left: 83px;
+                            }
+                            &:hover {
+                                color: #ffffff;
+                                &::after {
+                                    border-left: 5px solid #ffffff;
+                                }
+                            }
+                            &:active {
+                                color: #4e3427;
+                                &::after {
+                                    border-left: 5px solid #4e3427;
+                                }
+                            }
+                        }
+                    }
+                    &_posts {
+                        max-width: 262px;
+                        display: flex;
+                        flex-direction: column;
+                        &_title {
+                            font-family: raleway, Arial, sans-serif;
+                            font-size: 24px;
+                            line-height: 1.2;
+                            font-weight: 700;
+                            font-style: normal;
+                            color: #ffffff;
+                            text-transform: capitalize;
+                        }
+                        &_link {
+                            display: flex;
+                            flex-direction: column;
+                            text-decoration: none;
+                            border-bottom: 1px solid #252525;
+                            margin: 19px 0 0 0;
+                            &_date {
+                                font-family: montserrat, Arial, sans-serif;
+                                font-size: 12px;
+                                line-height: 20px;
+                                font-weight: 300;
+                                font-style: normal;
+                                color: #363636;
+                            }
+                            &_txt {
+                                font-family: montserrat, Arial, sans-serif;
+                                font-size: 14px;
+                                line-height: 20px;
+                                font-weight: 300;
+                                font-style: normal;
+                                color: #555555;
+                                margin: 10px 0 21px 0;
+                            }
+                            &:first-child {
+                                margin: 30px 0 0 0;
+                            }
+                            &:last-child {
+                                border: none;
+                            }
+                            &:hover {
+                                .body_wrp_footer_content_wrp_posts_link_date {
+                                    color: #ffffff;
+                                }
+                                .body_wrp_footer_content_wrp_posts_link_txt {
+                                    color: #c7b299;
+                                }
+                            }
+                            &:active {
+                                .body_wrp_footer_content_wrp_posts_link_date {
+                                    color: #c7b299;
+                                }
+                                .body_wrp_footer_content_wrp_posts_link_txt {
+                                    color: #4e3427;
+                                }
+                            }
+                        }
+                    }
+                    &_twitter {
+                        max-width: 262px;
+                        display: flex;
+                        flex-direction: column;
+                        &_title {
+                            font-family: raleway, Arial, sans-serif;
+                            font-size: 24px;
+                            line-height: 1.2;
+                            font-weight: 700;
+                            font-style: normal;
+                            color: #ffffff;
+                            text-transform: capitalize;
+                        }
+                        &_link {
+                            display: flex;
+                            flex-direction: column;
+                            text-decoration: none;
+                            border-bottom: 1px solid #252525;
+                            margin: 17px 0 0 0;
+                            &_txt {
+                                font-family: montserrat, Arial, sans-serif;
+                                font-size: 14px;
+                                line-height: 20px;
+                                font-weight: 300;
+                                font-style: normal;
+                                color: #555555;
+                                &_tag {
+                                    color: #00bff3;
+                                }
+                                &_link {
+                                    color: #959595;
+                                }
+                            }
+                            &_timestamp {
+                                font-family: montserrat, Arial, sans-serif;
+                                font-size: 12px;
+                                line-height: 20px;
+                                font-weight: 300;
+                                font-style: normal;
+                                color: #363636;
+                                margin: 11px 0 21px 0;
+                            }
+                            &:first-child {
+                                margin: 33px 0 0 0;
+                            }
+                            &:last-child {
+                                border: none;
+                            }
+                            &:hover {
+                                .body_wrp_footer_content_wrp_twitter_link_timestamp {
+                                    color: #ffffff;
+                                }
+                                .body_wrp_footer_content_wrp_twitter_link_txt {
+                                    color: #c7b299;
+                                }
+                            }
+                            &:active {
+                                .body_wrp_footer_content_wrp_twitter_link_timestamp {
+                                    color: #c7b299;
+                                }
+                                .body_wrp_footer_content_wrp_twitter_link_txt {
+                                    color: #4e3427;
+                                }
+                            }
+                        }
+                    }
+                    &_widget {
+                        max-width: 270px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        &_title {
+                            width: 100%;
+                            font-family: raleway, Arial, sans-serif;
+                            font-size: 24px;
+                            line-height: 1.2;
+                            font-weight: 700;
+                            font-style: normal;
+                            color: #ffffff;
+                            text-transform: capitalize;
+                            margin: 0 0 26px 0;
+                        }
+                        &_item {
+                            outline: 1px solid green;
+                            width: 130px;
+                            height: 98px;
+                            margin: 0 0 10px 0;
+                            &:hover {
+                                filter: brightness(60%);
+                            }
+                            &:active {
+                                filter: brightness(30%);
+                            }
+                        }
+                        &_phone {
+                            background-image: url(../img/footer_widget_phones.jpg);
+                        }
+                        &_bag {
+                            background-image: url(../img/footer_widget_bag.jpg);
+                        }
+                        &_book {
+                            background-image: url(../img/footer_widget_book.jpg);
+                        }
+                        &_icons {
+                            background-image: url(../img/footer_widget_icons.jpg);
+                        }
+                    }
+                }
+            }
+            &_bottom {
+                background-color: #111111;
+                padding: 45px 0 52px 0;
+                &_wrp {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
         }
     }
 }
