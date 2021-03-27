@@ -1677,6 +1677,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 28px;
 }
 
 .body_wrp_footer_content_wrp_posts_title {
@@ -1729,6 +1730,10 @@
   border: none;
 }
 
+.body_wrp_footer_content_wrp_posts_link:last-child .body_wrp_footer_content_wrp_posts_link_txt {
+  margin: 10px 0 0 0;
+}
+
 .body_wrp_footer_content_wrp_posts_link:hover .body_wrp_footer_content_wrp_posts_link_date {
   color: #ffffff;
 }
@@ -1754,6 +1759,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 28px;
 }
 
 .body_wrp_footer_content_wrp_twitter_title {
@@ -1814,6 +1820,10 @@
   border: none;
 }
 
+.body_wrp_footer_content_wrp_twitter_link:last-child .body_wrp_footer_content_wrp_twitter_link_timestamp {
+  margin: 11px 0 0 0;
+}
+
 .body_wrp_footer_content_wrp_twitter_link:hover .body_wrp_footer_content_wrp_twitter_link_timestamp {
   color: #ffffff;
 }
@@ -1840,6 +1850,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 28px;
 }
 
 .body_wrp_footer_content_wrp_widget_title {
@@ -1855,7 +1866,6 @@
 }
 
 .body_wrp_footer_content_wrp_widget_item {
-  outline: 1px solid green;
   width: 130px;
   height: 98px;
   margin: 0 0 10px 0;
@@ -1899,5 +1909,111 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.body_wrp_footer_bottom_wrp_nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body_wrp_footer_bottom_wrp_nav_item {
+  font-family: montserrat, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #555555;
+  border-left: 1px solid #252525;
+  padding: 0 10px 0 10px;
+}
+
+.body_wrp_footer_bottom_wrp_nav_item:first-child {
+  padding: 0 10px 0 0;
+  border: none;
+}
+
+.body_wrp_footer_bottom_wrp_nav_item:last-child {
+  padding: 0 0 0 10px;
+}
+
+.body_wrp_footer_bottom_wrp_nav_item_waxom, .body_wrp_footer_bottom_wrp_nav_item_pp, .body_wrp_footer_bottom_wrp_nav_item_faq, .body_wrp_footer_bottom_wrp_nav_item_sup {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #555555;
+}
+
+.body_wrp_footer_bottom_wrp_nav_item_waxom {
+  color: #959595;
+}
+
+.body_wrp_footer_bottom_wrp_nav_item_faq {
+  text-transform: uppercase;
+  color: #c7b299;
+}
+
+.body_wrp_footer_bottom_wrp_nav_item:hover .body_wrp_footer_bottom_wrp_nav_item_waxom,
+.body_wrp_footer_bottom_wrp_nav_item:hover .body_wrp_footer_bottom_wrp_nav_item_pp,
+.body_wrp_footer_bottom_wrp_nav_item:hover .body_wrp_footer_bottom_wrp_nav_item_faq,
+.body_wrp_footer_bottom_wrp_nav_item:hover .body_wrp_footer_bottom_wrp_nav_item_sup {
+  color: #ffffff;
+}
+
+.body_wrp_footer_bottom_wrp_nav_item:active .body_wrp_footer_bottom_wrp_nav_item_waxom,
+.body_wrp_footer_bottom_wrp_nav_item:active .body_wrp_footer_bottom_wrp_nav_item_pp,
+.body_wrp_footer_bottom_wrp_nav_item:active .body_wrp_footer_bottom_wrp_nav_item_faq,
+.body_wrp_footer_bottom_wrp_nav_item:active .body_wrp_footer_bottom_wrp_nav_item_sup {
+  color: #4e3427;
+}
+
+.body_wrp_footer_bottom_wrp_design {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body_wrp_footer_bottom_wrp_design_item {
+  font-family: montserrat, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #555555;
+  border-left: 1px solid #252525;
+  padding: 0 10px 0 10px;
+}
+
+.body_wrp_footer_bottom_wrp_design_item_a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #959595;
+}
+
+.body_wrp_footer_bottom_wrp_design_item:hover .body_wrp_footer_bottom_wrp_design_item_a {
+  color: #ffffff;
+}
+
+.body_wrp_footer_bottom_wrp_design_item:active .body_wrp_footer_bottom_wrp_design_item_a {
+  color: #4e3427;
+}
+
+.body_wrp_footer_bottom_wrp_design_item:first-child {
+  padding: 0 10px 0 0;
+  border: none;
+}
+
+.body_wrp_footer_bottom_wrp_design_item:last-child {
+  padding: 0 0 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -88,8 +88,6 @@
 .body {
     margin: 0;
     &_wrp {
-        // max-width: 1920px;
-        // margin: 0 auto;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -1283,6 +1281,7 @@
                         max-width: 262px;
                         display: flex;
                         flex-direction: column;
+                        margin-top: 28px;
                         &_title {
                             font-family: raleway, Arial, sans-serif;
                             font-size: 24px;
@@ -1320,6 +1319,9 @@
                             }
                             &:last-child {
                                 border: none;
+                                .body_wrp_footer_content_wrp_posts_link_txt {
+                                    margin: 10px 0 0 0;
+                                }
                             }
                             &:hover {
                                 .body_wrp_footer_content_wrp_posts_link_date {
@@ -1343,6 +1345,7 @@
                         max-width: 262px;
                         display: flex;
                         flex-direction: column;
+                        margin-top: 28px;
                         &_title {
                             font-family: raleway, Arial, sans-serif;
                             font-size: 24px;
@@ -1386,6 +1389,9 @@
                             }
                             &:last-child {
                                 border: none;
+                                .body_wrp_footer_content_wrp_twitter_link_timestamp {
+                                    margin: 11px 0 0 0;
+                                }
                             }
                             &:hover {
                                 .body_wrp_footer_content_wrp_twitter_link_timestamp {
@@ -1410,6 +1416,7 @@
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: space-between;
+                        margin-top: 28px;
                         &_title {
                             width: 100%;
                             font-family: raleway, Arial, sans-serif;
@@ -1422,7 +1429,6 @@
                             margin: 0 0 26px 0;
                         }
                         &_item {
-                            outline: 1px solid green;
                             width: 130px;
                             height: 98px;
                             margin: 0 0 10px 0;
@@ -1454,6 +1460,93 @@
                 &_wrp {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    &_nav {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        &_item {
+                            font-family: montserrat, Arial, sans-serif;
+                            font-size: 13px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            font-style: normal;
+                            color: #555555;
+                            border-left: 1px solid #252525;
+                            padding: 0 10px 0 10px;
+                            &:first-child {
+                                padding: 0 10px 0 0;
+                                border: none;
+                            }
+                            &:last-child {
+                                padding: 0 0 0 10px;
+                            }
+                            &_waxom, &_pp, &_faq, &_sup {
+                                text-decoration: none;
+                                text-transform: capitalize;
+                                color: #555555;
+                            }
+                            &_waxom {
+                                color: #959595;
+                            }                            
+                            &_faq {
+                                text-transform: uppercase;
+                                color: #c7b299;
+                            }
+                            &:hover  {
+                                .body_wrp_footer_bottom_wrp_nav_item_waxom,
+                                .body_wrp_footer_bottom_wrp_nav_item_pp,
+                                .body_wrp_footer_bottom_wrp_nav_item_faq,
+                                .body_wrp_footer_bottom_wrp_nav_item_sup {
+                                    color: #ffffff;
+                                }
+                            }
+                            &:active  {
+                                .body_wrp_footer_bottom_wrp_nav_item_waxom,
+                                .body_wrp_footer_bottom_wrp_nav_item_pp,
+                                .body_wrp_footer_bottom_wrp_nav_item_faq,
+                                .body_wrp_footer_bottom_wrp_nav_item_sup {
+                                    color: #4e3427;
+                                }
+                            }
+                        }
+                    }
+                    &_design {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        &_item {
+                            font-family: montserrat, Arial, sans-serif;
+                            font-size: 13px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            font-style: normal;
+                            color: #555555;
+                            border-left: 1px solid #252525;
+                            padding: 0 10px 0 10px;
+                            &_a {
+                                text-decoration: none;
+                                text-transform: capitalize;
+                                color: #959595;
+                            }
+                            &:hover &_a {
+                                color: #ffffff;
+                            }
+                            &:active &_a {
+                                color: #4e3427;
+                            }
+                            &:first-child {
+                                padding: 0 10px 0 0;
+                                border: none;
+                            }
+                            &:last-child {
+                                padding: 0 0 0 10px;
+                            }
+                        }
+                    }
                 }
             }
         }
