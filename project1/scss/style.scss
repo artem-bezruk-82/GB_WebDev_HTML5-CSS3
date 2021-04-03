@@ -107,6 +107,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    flex-wrap: wrap;
                     &_logo {
                         display: flex;
                         align-items: center;
@@ -137,6 +138,9 @@
                     &_nav {
                         display: flex;
                         align-items: center;
+                        &_input {
+                            display: none;
+                        }
                         &_list {
                             list-style: none;
                             display: flex;
@@ -1563,6 +1567,217 @@
                             &:last-child {
                                 padding: 0 0 0 10px;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .container {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .body {
+        &_wrp {
+            &_page {
+                max-width: 768px;
+                width: 100%;
+                &_header {
+                    &_top {
+                        flex-direction: column;
+                        &_nav {
+                            margin: 40px 0 40px 0;
+                        }                    
+                    }
+                    &_slider {
+                        margin: 220px 0 220px 0;
+                    }
+                }
+                &_main {
+                    &_services {
+                        &_wrp {
+                            justify-content: space-around;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media (max-width: 576px) {
+
+    .container {
+        max-width: 480px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .body {
+        &_wrp {
+            &_page {
+                max-width: 576px;
+                width: 100%;
+                margin: 0 auto;
+                &_header {
+                    &_top {
+                        flex-direction: row;
+                        &_logo {
+                            order: 2;
+                            &_txt {
+                                display: none;
+                            }
+                        }
+                        &_nav {
+                            order: 1;
+                            position: relative;
+                            &_lable {
+                                width: 30px;
+                                height: 20px;
+                                &_line {
+                                    display: block;
+                                    width: 100%;
+                                    height: 4px;
+                                    background-color: #ffffff;
+                                    position: relative;
+                                    &::before {
+                                        content: "";
+                                        display: block;
+                                        width: 100%;
+                                        height: 4px;
+                                        background-color: inherit;
+                                        position: absolute;
+                                        top: 8px;
+                                        left: 0;
+                                    }
+                                    &::after {
+                                        content: "";
+                                        display: block;
+                                        width: 100%;
+                                        height: 4px;
+                                        background-color: inherit;
+                                        position: absolute;
+                                        top: 16px;
+                                        left: 0;
+                                    }
+                                }
+                                &:hover &_line {
+                                    background-color: #c7b299;
+                                }
+                            }
+                            &_list {
+                                flex-direction: column;
+                                visibility: hidden;
+                                position: absolute;
+                                outline: 1px solid white;
+                                top: 80px;
+                                left: 0;
+                            }
+                            &_input:checked ~ &_list {
+                                visibility: visible;
+                            }
+                        }
+                        &_icons {
+                            order: 3;
+                        }
+                    }
+                    &_slider {
+                        margin: 180px 0 180px 0;
+                        &_arow {
+                            display: none;
+                        }
+                        &_content {
+                            &_design {
+                                font-size: 24px;
+                            }
+                            &_template {
+                                font-size: 48px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                &_main {
+                    &_services {
+                        padding: 40px 0 40px 0;
+                    }
+                    &_ideas {
+                        display: none;
+                    }
+                    &_adv {
+                        padding: 40px 0 40px 0;
+                        &_wrp {
+                            flex-direction: column;
+                            align-items: center;
+                            &_btn {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                    &_projects {
+                        padding: 40px 0 40px 0;
+                        &_filter {
+                            &_btn {
+                                padding: 10px;
+                            }
+                        }
+                        &_portfolio {
+                            flex-direction: column;
+                            align-items: center;
+                            margin-bottom: 40px;
+                        }
+                    }
+                    &_mobile {
+                        padding: 40px 0 0 0;
+                    }
+                    &_figures {
+                        padding: 69px 0 20px 0;
+                        &_wrp {
+                            &_item {
+                                width: 136px;
+                                margin: 0 10px 40px 10px;
+                            }
+                        }
+                    }
+                    &_posts {
+                        padding: 40px 0 40px 0;
+                        &_wrp {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+                    &_partners {
+                        padding: 70px 0 70px 0;
+                        &_wrp {
+                            flex-direction: column;
+                            &_a {
+                                margin-bottom: 40px;
+                                &:last-child {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &_footer {
+                &_content {
+                    display: none;
+                }
+                &_bottom {
+                    &_wrp {
+                        flex-direction: column;
+                        &_nav {
+                            order:2;
+                        }
+                        &_design {
+                            order: 1;
                         }
                     }
                 }
